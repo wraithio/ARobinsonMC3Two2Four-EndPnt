@@ -1,3 +1,5 @@
+using ARobinsonMC3Two2Four_EndPnt.services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,7 +8,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<Add2NumServices>();
+builder.Services.AddScoped<GtrThnLessThnServices>();
+builder.Services.AddScoped<WakeUpServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -6,7 +6,6 @@ namespace ARobinsonMC3Two2Four_EndPnt.Controllers
     [Route("[controller]")]
     public class Add2NumController : ControllerBase
     {
-         public List<int> NumberList = new();
        public List<string> ResultList = new();
 
        [HttpPost]

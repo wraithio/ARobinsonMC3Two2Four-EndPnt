@@ -1,3 +1,4 @@
+using ARobinsonMC3Two2Four_EndPnt.services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ARobinsonMC3Two2Four_EndPnt.Controllers
@@ -6,14 +7,18 @@ namespace ARobinsonMC3Two2Four_EndPnt.Controllers
     [Route("[controller]")]
     public class WakeUpController : ControllerBase
     {
-        public List<string> GreetingList = new();
+        private readonly WakeUpServices _wakeUpServices;
+
+        public WakeUpController(WakeUpServices wakeUpServices)
+        {
+            _wakeUpServices = wakeUpServices;
+        }
 
         [HttpPost]
         [Route("InputName/{name}/{time}")]
         public List<string> InputName(string name, string time)
         {
-            GreetingList.Add("Hello " + name + ", you woke up at " + time + " today!");
-            return GreetingList;
+            return _wakeUpServices.InputName(name,time);
         }
     }
 }
