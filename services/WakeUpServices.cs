@@ -7,12 +7,11 @@ namespace ARobinsonMC3Two2Four_EndPnt.services
 {
     public class WakeUpServices
     {
-         public List<string> GreetingList = new();
+        public List<string> GreetingList = new();
 
-        public List<string> InputName(string name, string time)
+        public string InputName(string name, string time)
         {
-            GreetingList.Add("Hello " + name + ", you woke up at " + time + " today!");
-            return GreetingList;
+            return "Hello " + name + ", you woke up at " + time + " today!";
         }
     }
 }

@@ -1,3 +1,4 @@
+using ARobinsonMC3Two2Four_EndPnt.services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ARobinsonMC3Two2Four_EndPnt.Controllers
@@ -6,15 +7,18 @@ namespace ARobinsonMC3Two2Four_EndPnt.Controllers
     [Route("[controller]")]
     public class Add2NumController : ControllerBase
     {
-       public List<string> ResultList = new();
+        private readonly Add2NumServices _add2NumServices;
 
-       [HttpPost]
-       [Route("AddNums/{Num1}/{Num2}")] 
-        public List<string> AddToNumList(int Num1,int Num2)
+        public Add2NumController(Add2NumServices add2NumServices)
         {
-            int sum = Num1 + Num2;
-            ResultList.Add("The sum of " + Num1 + " and " + Num2 + " is " + sum + ".");
-            return ResultList;
+            _add2NumServices = add2NumServices;
+        }
+
+        [HttpPost]
+        [Route("Add2Num/{Num1}/{Num2}")]
+        public string Add2Num(int Num1, int Num2)
+        {
+            return _add2NumServices.Add2Num(Num1, Num2);
         }
     }
 }

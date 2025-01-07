@@ -7,15 +7,15 @@ namespace ARobinsonMC3Two2Four_EndPnt.Controllers
     [Route("[controller]")]
     public class GtrThnLessThnController : ControllerBase
     {
-    private readonly GtrThnLessThnServices _gtrThnLessThnServices;
+        private readonly GtrThnLessThnServices _gtrThnLessThnServices;
 
-    public GtrThnLessThnController(GtrThnLessThnServices gtrThnLessThnServices)
-    {
-        _gtrThnLessThnServices = gtrThnLessThnServices;
-    }
-    [HttpPost]
-    [Route("GtrLssThn/{Num1}/{Num2}")] 
-    public List<string> GtrLssThn(int Num1,int Num2)
+        public GtrThnLessThnController(GtrThnLessThnServices gtrThnLessThnServices)
+        {
+            _gtrThnLessThnServices = gtrThnLessThnServices;
+        }
+        [HttpPost]
+        [Route("GtrLssThn/{Num1}/{Num2}")]
+        public string GtrLssThn(int Num1, int Num2)
         {
             return _gtrThnLessThnServices.GtrLssThn(Num1, Num2);
         }

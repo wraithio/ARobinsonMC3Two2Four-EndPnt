@@ -9,23 +9,21 @@ namespace ARobinsonMC3Two2Four_EndPnt.services
     {
         public List<string> ResultList = new();
 
-    public List<string> GtrLssThn(int Num1,int Num2)
+        public string GtrLssThn(int Num1, int Num2)
         {
-            if(Num1 < Num2)
+            if (Num1 < Num2)
             {
-                 ResultList.Add(Num1 + " is less than " + Num2 + ".");
-                 ResultList.Add(Num2 + " is greater than " + Num1 + ".");
+                return Num1 + " is less than " + Num2 + "." + Num2 + " is greater than " + Num1 + ".";
             }
-            if(Num1 > Num2)
+            if (Num1 > Num2)
             {
-                 ResultList.Add(Num1 + " is greater than " + Num2 + ".");
-                 ResultList.Add(Num2 + " is less than " + Num1 + ".");
+                return Num1 + " is greater than " + Num2 + ". " + Num2 + " is less than " + Num1 + ".";
             }
-            if(Num1 == Num2)
+            if (Num1 == Num2)
             {
-                ResultList.Add(Num1 + " is equal to " + Num2 + ".");
+                return Num1 + " is equal to " + Num2 + ".";
             }
-            return ResultList;
+            return null!;
         }
     }
 }
