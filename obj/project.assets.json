@@ -428,19 +428,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yaves\\.nuget\\packages\\": {}
+    "C:\\Users\\aarmo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yaves\\OneDrive\\Escritorio\\school\\Codestack\\LEVEL 2\\peerreview\\ARobinsonMC3Two2Four-EndPnt\\ARobinsonMC3Two2Four-EndPnt.csproj",
+      "projectUniqueName": "C:\\Users\\aarmo\\CodeStack\\Level2\\Week1\\ARobinsonMC3Two2Four-EndPnt\\ARobinsonMC3Two2Four-EndPnt.csproj",
       "projectName": "ARobinsonMC3Two2Four-EndPnt",
-      "projectPath": "C:\\Users\\yaves\\OneDrive\\Escritorio\\school\\Codestack\\LEVEL 2\\peerreview\\ARobinsonMC3Two2Four-EndPnt\\ARobinsonMC3Two2Four-EndPnt.csproj",
-      "packagesPath": "C:\\Users\\yaves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yaves\\OneDrive\\Escritorio\\school\\Codestack\\LEVEL 2\\peerreview\\ARobinsonMC3Two2Four-EndPnt\\obj\\",
+      "projectPath": "C:\\Users\\aarmo\\CodeStack\\Level2\\Week1\\ARobinsonMC3Two2Four-EndPnt\\ARobinsonMC3Two2Four-EndPnt.csproj",
+      "packagesPath": "C:\\Users\\aarmo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aarmo\\CodeStack\\Level2\\Week1\\ARobinsonMC3Two2Four-EndPnt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yaves\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\aarmo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
