@@ -23,6 +23,6 @@ Endpoints:
 
 ---
 
-github [here](https://github.com/wraithio/ARobinsonMC2Add2Num-EndPnt)
+github [here](https://github.com/wraithio/ARobinsonMC3Two2Four-EndPnt)
 
 ### Peer Review by: 
