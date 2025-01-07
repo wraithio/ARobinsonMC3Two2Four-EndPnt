@@ -25,4 +25,5 @@ Endpoints:
 
 github [here](https://github.com/wraithio/ARobinsonMC3Two2Four-EndPnt)
 
-### Peer Review by: 
+### Peer Review by: Juan Heredia
+"Everything works fine and the direct injection is there, good work👍"
