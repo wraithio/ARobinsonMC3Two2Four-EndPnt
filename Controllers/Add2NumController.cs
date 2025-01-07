@@ -14,7 +14,7 @@ namespace ARobinsonMC3Two2Four_EndPnt.Controllers
             _add2NumServices = add2NumServices;
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("Add2Num/{Num1}/{Num2}")]
         public string Add2Num(int Num1, int Num2)
         {

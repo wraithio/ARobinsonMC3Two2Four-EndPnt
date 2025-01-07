@@ -7,8 +7,6 @@ namespace ARobinsonMC3Two2Four_EndPnt.services
 {
     public class GtrThnLessThnServices
     {
-        public List<string> ResultList = new();
-
         public string GtrLssThn(int Num1, int Num2)
         {
             if (Num1 < Num2)

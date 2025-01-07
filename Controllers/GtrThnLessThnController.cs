@@ -13,7 +13,7 @@ namespace ARobinsonMC3Two2Four_EndPnt.Controllers
         {
             _gtrThnLessThnServices = gtrThnLessThnServices;
         }
-        [HttpPost]
+        [HttpGet]
         [Route("GtrLssThn/{Num1}/{Num2}")]
         public string GtrLssThn(int Num1, int Num2)
         {

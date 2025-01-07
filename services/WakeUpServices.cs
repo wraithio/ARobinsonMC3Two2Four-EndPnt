@@ -7,9 +7,7 @@ namespace ARobinsonMC3Two2Four_EndPnt.services
 {
     public class WakeUpServices
     {
-        public List<string> GreetingList = new();
-
-        public string InputName(string name, string time)
+        public string InputName(string name, int time)
         {
             return "Hello " + name + ", you woke up at " + time + " today!";
         }

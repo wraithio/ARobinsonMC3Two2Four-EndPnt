@@ -14,9 +14,9 @@ namespace ARobinsonMC3Two2Four_EndPnt.Controllers
             _wakeUpServices = wakeUpServices;
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("InputName/{name}/{time}")]
-        public string InputName(string name, string time)
+        public string InputName(string name, int time)
         {
             return _wakeUpServices.InputName(name, time);
         }
